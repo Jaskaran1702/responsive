@@ -1,0 +1,135 @@
+
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			padding: 5px;
+			font-weight: bold;
+			width: 100%;
+			height: 100px;
+			background-color: powderblue;
+		}
+		nav{
+			min-height: 40px;
+			width: 100%;
+			display: flex;					
+			flex-wrap: wrap;
+			background-color: linen;
+			align-items: center;
+			overflow: hidden;			
+		}
+		
+		nav>div{			
+			flex-grow: 1;
+			flex-shrink: 1;
+			text-align: center;			
+			
+		}
+		
+		article{		
+			padding: 5px;
+			font-weight: bold;
+			clear: left;
+			float: left;			
+			height: 200px;
+			background-color: tan;
+		}
+		aside{
+			padding: 5px;
+			font-weight: bold;
+			width: 20%;
+			float: left;
+			height: 200px;
+			background-color: lightsalmon;
+		}
+		footer{
+			padding: 5px;
+			font-weight: bold;
+			clear: both;
+			width: 100%;
+			height: 40px;
+			background-color: powderblue;
+		}
+		.li_inline{
+			display: inline;
+			background-color:darkseagreen;
+			border-color: red;
+			border-style: dotted;
+			margin: 6%;
+			padding-top: 1% ;
+			padding-bottom: 1% ;
+			padding-left: 5% ;
+			padding-right: 5% ;
+			font-size: 25px;
+			position: relative;
+		}
+
+		.article_elem{
+			display: inline;
+			margin: 0;
+			padding: 0.5rem;
+			position: relative;
+			
+		
+		}
+		.feature_length{
+			width: 85%;
+			align-content: flex-end;
+		}
+		.sidebar_length{
+			width: 15%;
+		}
+		.div1{
+			padding-top: 4%;
+			padding-left: 2%;
+		}
+
+		.feature1{
+			background-color: #5ed44e;
+ 			padding: 20px;
+ 			float: left;
+ 			width: 20%; 
+			text-align: center;
+			margin-right: 15%;
+			border-color: red;
+			border-style: dotted;
+
+		}
+		
+		.feature2{
+			background-color: #5ed44e;
+  		padding: 20px;
+  		float: left;
+  		width: 20%; 
+		text-align: center;
+		margin-right: 15%;
+		border-color: red;
+			border-style: dotted;
+
+		}
+		
+		.feature3{
+			background-color: #5ed44e;
+			padding: 20px;
+			float: left;
+			width: 20%;
+			text-align: center;
+			margin-right: 5%;
+			border-color: red;
+			border-style: dotted;
+
+		}
+
+		@media screen and (max-width: 800px) {
+			.feature3 {
+			  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+			  background-color: darkgoldenrod;
+			}
+			.feature2 , .feature1 {
+				width: 30%; /* The width is 100%, when the viewport is 800px or smaller */
+				background-color: darkgoldenrod;
+				margin-bottom: 10px;
+			  }
+		  }
